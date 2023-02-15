@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>traversion</title>
+</head>
+
+<body>
+    <script>
+        let data = [2, 34, 4, 1, 9, 76, 12];
+        function getElem() {
+            let idd = document.getElementById('element').value;
+            if (idd < data.length) {
+                alert(data[idd]);
+            } else {
+                alert('please input valid number');
+            }
+        }
+    </script>
+    <br>
+    array = [2,34,4,1,9,76,12];<br>
+    <input type="text" id="element" placeholder="give value">
+    <button onclick="getElem();">get element</button>
+</body>
+
+</html>

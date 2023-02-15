@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insertion</title>
+</head>
+
+<body>
+    <script>
+        function runTime() {
+            let datas = [20, 10, 60, 40, 90];
+            let element = document.getElementById('new_position').value;
+            element = parseInt(element);
+            let position = document.getElementById('keywords').value;
+            console.log(datas);
+            for (let i = datas.length - 1; i >= 0; i--) {
+                //console.log(datas)
+                if (i >= position) {
+                    datas[i + 1] = datas[i];
+                    if (i == position) {
+                        datas[i] = element;
+                    }
+                }
+            }
+            console.log(datas);
+        }
+    </script>
+    <input type="text" id="keywords">
+    <input type="text" id="new_position">
+    <button onclick="runTime();">change value</button>
+</body>
+
+</html>
