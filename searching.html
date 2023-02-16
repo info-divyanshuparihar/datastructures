@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Searching</title>
+</head>
+
+<body>
+    <script>
+        function searchEl() {
+            let data = [20, 80, 50, 10, 23, 54];
+            let item = document.getElementById('searchElem').value;
+            let index = undefined;
+            for (let i = 0; i < data.length - 1; i++) {
+                if (data[i] == item) {
+                    index = i;
+                    break;
+                }
+            }
+            console.log(index);
+        }
+
+     //console.log(data.indexOf(item)); //default fun to getIndex
+     //data.splice(2,1); //default fun to remove element
+     //console.log(data);
+    </script>
+    data = [20,80,50,10,23,54];</br>
+    <input type="text" placeholder="enter value" id="searchElem">
+    <button onclick="searchEl();">Search Element</button>
+</body>
+
+</html>
