@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mergeTwoArray</title>
+</head>
+<body>
+    <script>
+        let myData = [3,24,79,65,54,33];
+        let myData2 = [44,33,22,66,77,76];
+        let newData = [];
+        for (let i = 0; i<myData.length; i++) {
+            newData[i] = myData[i]; 
+        }
+        for (let i = 0; i<myData2.length; i++) {
+            newData[myData.length+i] = myData2[i];
+        }
+        console.log(newData); 
+        //default function to reverse an array;
+        let ex = [999,88,7,1]
+        let ex2 = ex.reverse();
+        console.log(ex2);
+        //default function to merge array;
+        let newex = [3,4,5,6];
+        let ex3 = [...newex,...ex2];
+        console.log(ex3);
+    </script>
+</body>
+</html>
