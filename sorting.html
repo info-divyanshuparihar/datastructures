@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble sorting</title>
+</head>
+
+<body>
+    <script>
+        let data_x = [40, 30, 12, 25,1,27];
+        for (let i = 0; i < data_x.length; i++) {
+            for (let j = 0; j < data_x.length; j++) {
+                if (data_x[j] > data_x[j + 1]) {
+                    let tem = data_x[j]
+                    data_x[j] = data_x[j + 1]
+                    data_x[j + 1] = tem;
+                }
+            }
+        }
+        console.log(data_x);
+    </script>
+    array is [40, 30, 12, 25,1,27];
+</body>
+
+</html>
