@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursion</title>
+</head>
+
+<body>
+    <script>
+        // function recursionTo(x) {
+        //     console.log(x);
+        //     if (x < 10) {
+        //         recursionTo(x + 1);
+        //     }
+        // }
+        // let item = 0;
+        // recursionTo(item);
+        function facts() {
+            function factOrial(item) {
+                if (item == 0) {
+                    return 1;
+                }
+                return item * factOrial(item - 1);
+            }
+            let data = document.getElementById("myInput").value;
+            console.log(factOrial(data));
+        }
+
+    </script>
+    <input type="text" id="myInput">
+    <button onclick="facts();">find factorial</button>
+</body>
+
+</html>
