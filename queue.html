@@ -26,11 +26,16 @@
             console.log(queue);
         }
         function dequeue() {
-            for (let i = 0; i < queue.length; i++) {
-                queue[i] = queue[i + 1]
+            if (currentSize > 0) {
+                for (let i = 0; i < queue.length; i++) {
+                    queue[i] = queue[i + 1]
+                }
+                currentSize--;
+                queue.length = currentSize;
+            } else {
+                alert("queue is already empty");
             }
-            currentSize--;
-            queue.length = currentSize;
+
         }
         // enqueue(10);
         // display();
